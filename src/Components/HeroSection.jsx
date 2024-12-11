@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useRef } from "react";
 import useHeroSectionAni from "../Hooks/useHeroSectionAni";
+import profilePic from "../assets/aayush-pp.png";
 
 function HeroSection() {
   const navbarRef = useRef();
@@ -17,10 +18,7 @@ function HeroSection() {
           {/* //img div */}
           <div className="py-[7px] px-[9px] bg-[#2B2B2B] flex items-center rounded-md">
             <a href="#project">
-              <img
-                src="../public/aayush-pp.png"
-                className="w-8 flex-shrink-0"
-              />
+              <img src={profilePic} className="w-8 flex-shrink-0" />
             </a>
           </div>
           {/* text div */}

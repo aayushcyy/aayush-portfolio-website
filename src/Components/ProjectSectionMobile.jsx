@@ -1,20 +1,23 @@
 import React, { useRef } from "react";
 import useProjectAniMobile from "../Hooks/useProjectAniMobile";
+import TrendHiveImg from "../assets/TrendHive.png";
+import TaskifyImg from "../assets/Taskify.png";
+import TimerAppImg from "../assets/Timer-app.png";
 
 function ProjectSectionMobile() {
   const projects4Mobile = [
     {
-      src: "TrendHive.png",
+      src: TrendHiveImg,
       linkToProject: "https://bespoke-tiramisu-76ac7a.netlify.app/",
       name: "TrendHive",
     },
     {
-      src: "../../public/Taskify.png",
+      src: TaskifyImg,
       linkToProject: "https://verdant-eclair-eed65d.netlify.app/",
       name: "Taskify",
     },
     {
-      src: "../../public/Timer-app.png",
+      src: TimerAppImg,
       linkToProject: "https://tranquil-dasik-1f0150.netlify.app/",
       name: "Timer App",
     },
