@@ -4,6 +4,7 @@ import ContactSection from "./Components/ContactSection";
 import Footer from "./Components/Footer";
 import HeroSection from "./Components/HeroSection";
 import AboutSection from "./Components/AboutSection";
+import ProjectSectionMobile from "./Components/ProjectSectionMobile";
 
 function App() {
   return (
@@ -16,7 +17,10 @@ function App() {
 
       {/* project section */}
       <span id="projects"></span>
+      {/* Desktop Project section */}
       <ProjectSection />
+      {/* Mobile Project Section */}
+      <ProjectSectionMobile />
 
       {/* Contact Section */}
       <ContactSection />

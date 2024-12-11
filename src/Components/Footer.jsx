@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="w-full flex pb-3 justify-between px-[45%] text-[#b1b1b1]">
+    <div className="w-full flex pb-3 justify-between md:px-[45%] px-[32%] text-[#b1b1b1]">
       <a href="https://github.com/aayushcyy">
         <i class="ri-github-fill"></i>
       </a>
