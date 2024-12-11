@@ -2,7 +2,7 @@ import React from "react";
 
 function ContactSection() {
   return (
-    <div className="w-full h-screen py-16 flex flex-col items-center gap-[70px] relative bg-green-600">
+    <div className="w-full h-screen py-16 flex flex-col items-center gap-[70px] relative mt-10">
       <div className="w-full h-[50%] rounded-b-[30px] bg-[#1E1E1E] relative hover:scale-[1.02] transition-all duration-300">
         <a
           href="mailto:aayushcyy@gmail.com"

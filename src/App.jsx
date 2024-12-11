@@ -7,7 +7,7 @@ import AboutSection from "./Components/AboutSection";
 
 function App() {
   return (
-    <div className="w-full min-h-screen md:px-[120px] px-5 items-center flex flex-col ">
+    <div className="w-full min-h-screen md:px-[120px] px-5 items-center flex flex-col">
       {/* hero section */}
       <HeroSection />
 

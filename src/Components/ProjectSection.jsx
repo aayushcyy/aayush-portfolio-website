@@ -29,7 +29,7 @@ function ProjectSection() {
 
   return (
     <div
-      className="min-h-screen w-full flex flex-col items-center bg-[#1D1D1D] mt-20 pt-[60px] relative"
+      className="min-h-screen w-full flex flex-col items-center bg-[#1D1D1D] mt-20 pt-[60px] relative mb-[800px]"
       ref={containerRef}
     >
       <h1 className="uppercase text-8xl font-[900]">Projects</h1>
