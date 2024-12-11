@@ -10,7 +10,7 @@ const useProjectAniMobile = ({ childMobile, containerMobile }) => {
       gsap.fromTo(
         childMobile.current,
         {
-          y: 400,
+          y: 600,
           opacity: 0,
         },
         {

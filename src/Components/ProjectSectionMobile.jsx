@@ -28,16 +28,16 @@ function ProjectSectionMobile() {
   });
   return (
     <div
-      className="h-screen w-full md:hidden flex-col items-center bg-[#2d2e70] mb-10 mt-20 pt-[60px] relative"
+      className="h-screen w-full md:hidden flex flex-col items-center bg-[#1C1C1C] mb-[650px] mt-20 pt-[90px] relative"
       ref={containerMobileRef}
     >
       <h1 className="uppercase text-6xl font-[900]">Projects</h1>
-      <div className="flex items-center min-h-screen bg-red-400">
+      <div className="flex items-center h-screen">
         {projects4Mobile.map((project, index) => {
           return (
             <div
               key={project.name}
-              className="flex flex-col rounded-xl overflow-hidden w-[800px] h-[480px] card absolute left-[18%] top-[25%] bg-purple-500"
+              className="flex flex-col rounded-xl overflow-hidden w-[360px] h-[500px] card absolute left-[2%] top-[18%]"
               ref={(el) => (childMobileRef.current[index] = el)} // Adjust these values
             >
               <div className="project-card relative py-5 px-7 flex justify-between items-center bg-[#353535]">
@@ -48,11 +48,11 @@ function ProjectSectionMobile() {
                   </a>
                 </p>
               </div>
-              <div className="relative flex items-center justify-center">
+              <div className="relative flex items-center justify-center w-full h-full">
                 <img
                   src={project.src}
                   alt={project.name}
-                  className="w-full h-full object-center"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
