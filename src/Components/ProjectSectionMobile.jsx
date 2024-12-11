@@ -31,7 +31,7 @@ function ProjectSectionMobile() {
   });
   return (
     <div
-      className="h-[80vh] w-full md:hidden flex flex-col items-center bg-[#2B2B2B] mb-[700px] mt-20 pt-[90px] relative"
+      className="h-[90vh] w-full md:hidden flex flex-col items-center bg-[#2B2B2B] mb-[800px] mt-20 pt-[90px] relative"
       ref={containerMobileRef}
     >
       <h1 className="uppercase text-6xl font-[900]">Projects</h1>
