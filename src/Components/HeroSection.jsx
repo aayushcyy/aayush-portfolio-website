@@ -6,9 +6,8 @@ function HeroSection() {
   const navbarRef = useRef();
   const boxRef = useRef();
   const nameRef = useRef();
-  const linkRef = useRef();
   const professionRef = useRef();
-  useHeroSectionAni({ navbarRef, boxRef, nameRef, professionRef, linkRef });
+  useHeroSectionAni({ navbarRef, boxRef, nameRef, professionRef });
   return (
     <div className="w-full md:h-screen h-[66vh] flex flex-col items-start md:py-5 py-8">
       {/* navbar */}
@@ -32,7 +31,7 @@ function HeroSection() {
           </div>
         </div>
         {/* mail div */}
-        <div className="pt-10 pb-[10px] bg-[#1D1D1D] px-2 rounded-b-md absolute md:right-[120px] right-5 top-0 group hover:scale-105 transition-all duration-200">
+        <div className="pt-10 pb-[10px] bg-[#1D1D1D] px-2 rounded-b-md absolute md:right-[120px] right-5 -top-5 group hover:scale-105 transition-all duration-200">
           <a
             href="mailto:aayushcyy@gmail.com?subject=Hello Aayush&body=I would like to discuss..."
             className="border-[1px] border-white px-[6px] py-[3px] text-center rounded-md md:text-[21px] text-[19px] group-hover:border-[#FDD6D5] group-hover:text-[#FDD6D5] duration-200"
@@ -53,22 +52,19 @@ function HeroSection() {
         >
           Aayush Chaudhary
         </h1>
-        <div className="flex w-full items-center md:justify-between justify-center md:-mt-4 -mt-[58px] z-50">
-          <p
-            className="text-2xl font-semibold md:font-normal text-[#c7c7c7b0]"
-            ref={professionRef}
-          >
+        <div
+          className="flex w-full items-center md:justify-between justify-center md:-mt-4 -mt-[58px] z-50"
+          ref={professionRef}
+        >
+          <p className="text-2xl font-semibold md:font-normal text-[#c7c7c7b0]">
             Front-End Developer
           </p>
-          <Link
-            className="text-lg font-medium px-5 py-[2px] border-2 rounded-3xl group hover:text-[#FDD6D5] hover:border-[#FDD6D5] hover:scale-105 transition-all duration-300 md:block hidden"
-            ref={linkRef}
-          >
+          <a className="text-lg font-medium px-5 py-[2px] border-2 rounded-3xl group hover:text-[#FDD6D5] hover:border-[#FDD6D5] hover:scale-105 transition-all duration-300 md:block hidden">
             Get in touch{" "}
             <span className="group-hover:-rotate-45 z-10">
               <i class="ri-arrow-right-up-line"></i>
             </span>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

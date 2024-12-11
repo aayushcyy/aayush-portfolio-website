@@ -1,28 +1,32 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-//, box, name, profession, link
-const useHeroSectionAni = ({
-  navbarRef,
-  boxRef,
-  nameRef,
-  professionRef,
-  linkRef,
-}) => {
+const useHeroSectionAni = ({ navbarRef, boxRef, nameRef, professionRef }) => {
   useEffect(() => {
     const animation = gsap.context(() => {
       gsap.from(navbarRef.current, {
         y: -100,
         opacity: 0,
-        duration: 0.7,
-        delay: 1,
+        duration: 1,
+        delay: 0.7,
       });
       gsap.from(boxRef.current, {
         opacity: 0,
+        scale: 0.8,
         duration: 1,
-        delay: 0.5,
+        delay: 1.5,
+      });
+      gsap.from(nameRef.current, {
+        y: 150,
+        opacity: 0,
+        duration: 1,
+        delay: 0.7,
+      });
+      gsap.from(professionRef.current, {
+        y: 150,
+        opacity: 0,
+        duration: 1,
+        delay: 0.9,
       });
     });
     return () => animation.revert();
