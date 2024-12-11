@@ -14,7 +14,7 @@ function AboutSection() {
       ref={containerRef}
     >
       <div
-        className="bg-[#1D1D1D] rounded-md md:px-10 px-5 md:py-[80px] py-12 flex md:flex-row flex-col justify-between md:gap-0 gap-6"
+        className="bg-[#2B2B2B] rounded-md md:px-10 px-5 md:py-[80px] py-12 flex md:flex-row flex-col justify-between md:gap-0 gap-6"
         ref={boxRef}
       >
         <div

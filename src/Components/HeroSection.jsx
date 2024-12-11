@@ -29,7 +29,7 @@ function HeroSection() {
           </div>
         </div>
         {/* mail div */}
-        <div className="pt-10 pb-[10px] bg-[#1D1D1D] px-2 rounded-b-md absolute md:right-[120px] right-5 -top-5 group hover:scale-105 transition-all duration-200">
+        <div className="pt-10 pb-[10px] bg-[#252525] px-2 rounded-b-md absolute md:right-[120px] right-5 md:-top-5 -top-8 group hover:scale-105 transition-all duration-200">
           <a
             href="mailto:aayushcyy@gmail.com?subject=Hello Aayush&body=I would like to discuss..."
             className="border-[1px] border-white px-[6px] py-[3px] text-center rounded-md md:text-[21px] text-[19px] group-hover:border-[#FDD6D5] group-hover:text-[#FDD6D5] duration-200"
