@@ -10,7 +10,7 @@ function HeroSection() {
   const professionRef = useRef();
   useHeroSectionAni({ navbarRef, boxRef, nameRef, professionRef });
   return (
-    <div className="w-full md:h-screen h-[66vh] flex flex-col items-start md:py-5 py-8">
+    <div className="w-full md:h-screen h-[66vh] flex flex-col items-start md:py-5">
       {/* navbar */}
       <div className="flex w-full justify-between" ref={navbarRef}>
         {/* profile div */}
@@ -29,7 +29,7 @@ function HeroSection() {
           </div>
         </div>
         {/* mail div */}
-        <div className="pt-10 pb-[10px] bg-[#252525] px-2 rounded-b-md absolute md:right-[120px] right-5 md:-top-5 -top-8 group hover:scale-105 transition-all duration-200">
+        <div className="pt-10 pb-[10px] bg-[#252525] px-2 rounded-b-md absolute md:right-[120px] lg:right-0 right-5 md:-top-5 -top-8 group hover:scale-105 transition-all duration-200">
           <a
             href="mailto:aayushcyy@gmail.com?subject=Hello Aayush&body=I would like to discuss..."
             className="border-[1px] border-white px-[6px] py-[3px] text-center rounded-md md:text-[21px] text-[19px] group-hover:border-[#FDD6D5] group-hover:text-[#FDD6D5] duration-200"
@@ -41,23 +41,23 @@ function HeroSection() {
       {/* hero section */}
       <div className="flex flex-col w-full md:mt-80 mt-[310px] justify-center relative items-center">
         <div
-          className="bg-[#2B2B2B] w-full md:h-[280px] h-[180px] rounded-t-[30px] absolute -top-48 z-10"
+          className="bg-[#2B2B2B] w-full md:h-[280px] h-[180px] lg:h-[200px] rounded-t-[30px] absolute -top-48 z-10"
           ref={boxRef}
         ></div>
         <h1
-          className="text-center md:text-[115px] text-[49px] font-[900] md:leading-normal leading-10  uppercase z-50 relative md:-top-0 -top-[68px]"
+          className="text-center md:text-[115px] text-[49px] font-[900] md:leading-normal leading-10 lg:leading-[1.1]  uppercase z-50 relative md:-top-0 -top-[68px] lg:-top-44 lg:text-[125px]"
           ref={nameRef}
         >
           Aayush Chaudhary
         </h1>
         <div
-          className="flex w-full items-center md:justify-between justify-center md:-mt-4 -mt-[58px] z-50"
+          className="flex w-full items-center md:justify-between justify-center md:-mt-4 -mt-[58px] z-50 lg:-mt-44"
           ref={professionRef}
         >
           <p className="text-2xl font-semibold md:font-normal text-[#c7c7c7b0]">
             Front-End Developer
           </p>
-          <a className="text-lg font-medium px-5 py-[2px] border-2 rounded-3xl group hover:text-[#FDD6D5] hover:border-[#FDD6D5] hover:scale-105 transition-all duration-300 md:block hidden">
+          <a className="text-lg lg:text-sm font-medium px-5 py-[2px] border-2 rounded-3xl group hover:text-[#FDD6D5] hover:border-[#FDD6D5] hover:scale-105 transition-all duration-300 md:block hidden">
             Get in touch{" "}
             <span className="group-hover:-rotate-45 z-10">
               <i class="ri-arrow-right-up-line"></i>
