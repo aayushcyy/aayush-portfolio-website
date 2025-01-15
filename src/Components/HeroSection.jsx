@@ -57,12 +57,15 @@ function HeroSection() {
           <p className="text-xl md:text-[3vw] font-semibold md:font-normal text-[#c7c7c7b0]">
             Front-End Developer
           </p>
-          <a className="text-lg md:text-[2vw] lg:text-sm font-medium px-5 md:px-4 py-[2px] md:py-[1px] border-2 rounded-3xl group hover:text-[#FDD6D5] hover:border-[#FDD6D5] hover:scale-105 transition-all duration-300 md:block hidden">
-            Get in touch{" "}
+          <Link
+            to="https://x.com/aayucyy"
+            className="text-lg md:text-[2vw] lg:text-sm font-medium px-5 md:px-4 py-[2px] md:py-[1px] border-2 rounded-3xl group hover:text-[#FDD6D5] hover:border-[#FDD6D5] hover:scale-105 transition-all duration-300 md:block hidden"
+          >
+            Chat with me{" "}
             <span className="group-hover:-rotate-45 z-10">
               <i class="ri-arrow-right-up-line"></i>
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
