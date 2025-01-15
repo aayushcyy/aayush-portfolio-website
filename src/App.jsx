@@ -12,7 +12,7 @@ const Loader = lazy(() => import("./Components/Loader"));
 
 function App() {
   return (
-    <div className="w-full min-h-screen lg:px-20 md:px-14 px-5 items-center flex md:gap-10 lg:gap-20 gap-0 flex-col">
+    <div className="w-full min-h-screen lg:px-20 md:px-14 px-7 items-center flex md:gap-10 lg:gap-20 gap-0 flex-col">
       {/* hero section */}
       <Suspense fallback={<Loader />}>
         <HeroSection />

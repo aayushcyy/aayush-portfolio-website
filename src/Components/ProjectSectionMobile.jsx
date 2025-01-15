@@ -3,9 +3,19 @@ import useProjectAniMobile from "../Hooks/useProjectAniMobile";
 import TrendHiveImg from "../assets/TrendHive.png";
 import TaskifyImg from "../assets/Taskify.png";
 import TimerAppImg from "../assets/Timer-app.png";
+import BdaySite from "../assets/bdaysite.png";
 
 function ProjectSectionMobile() {
   const projects4Mobile = [
+    {
+      src: BdaySite,
+      linkToProject: "https://bdaycard-delta.vercel.app/",
+      name: "Create Bday Card",
+      about:
+        "Send a digital birthday card that lets your friends blow out the candles virtually!",
+      tools:
+        "NextJs, React, Firebase, Framer Motion, JavaScript, HTML, CSS, Tailwind",
+    },
     {
       src: TrendHiveImg,
       linkToProject: "https://bespoke-tiramisu-76ac7a.netlify.app/",
@@ -31,10 +41,10 @@ function ProjectSectionMobile() {
   });
   return (
     <div
-      className="h-[90vh] w-full md:hidden flex flex-col items-center bg-[#2B2B2B] mb-[800px] mt-20 pt-[90px] relative"
+      className="h-[90vh] w-full md:hidden flex flex-col items-center bg-[#2B2B2B] mb-[800px] mt-20 pt-[40px] relative"
       ref={containerMobileRef}
     >
-      <h1 className="uppercase text-6xl font-[900]">Projects</h1>
+      <h1 className="uppercase text-5xl font-[900]">Projects</h1>
       <div className="flex items-center h-screen w-full px-[2.5%] relative">
         {projects4Mobile.map((project, index) => {
           return (
