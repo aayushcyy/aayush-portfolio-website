@@ -11,7 +11,7 @@ function ProjectSection() {
     {
       src: BdaySite,
       linkToProject: "https://bdaycard-delta.vercel.app/",
-      name: "Bday Card Generator",
+      name: "Create Bday Card",
       about:
         "Send a digital birthday card that lets your friends blow out the candles virtually!",
       tools:
@@ -38,21 +38,21 @@ function ProjectSection() {
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
-      className="md:h-[85vh] lg:h-[88vh] h-screen w-full md:flex hidden flex-col items-center bg-[#2B2B2B] mt-20 lg:mt-0 pt-[40px] lg:pt-8 relative mb-[150px] lg:mb-0"
+      className="md:h-[78vh] lg:h-[88vh] h-screen w-full md:flex hidden flex-col items-center bg-[#2B2B2B] mt-20 lg:mt-0 pt-[40px] md:pt-7 lg:pt-8 relative mb-[150px] md:mb-0 lg:mb-0"
     >
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="uppercase md:text-8xl text-6xl font-[900]"
+        className="uppercase md:text-7xl lg:text-8xl text-6xl font-[900]"
       >
         Projects
       </motion.h1>
 
-      <div className="flex gap-10 lg:gap-8 h-full items-center justify-center relative w-full px-14 lg:px-0 flex-wrap scroll-smooth">
+      <div className="flex gap-10 md:gap-4 lg:gap-8 h-full items-center justify-center relative w-full px-14 md:px-0 lg:px-0 flex-wrap scroll-smooth">
         {projects.map((project, index) => (
           <div
-            className="flex flex-col w-[300px] lg:w-[250px] h-[330px] px-3 py-4 gap-2 bg-[#1A1A1A] rounded-lg"
+            className="flex flex-col w-[300px] md:w-[30%] lg:w-[250px] h-[330px] md:h-[300px] px-3 py-4 md:py-2 md:px-2 gap-2 bg-[#1A1A1A] rounded-lg"
             key={index}
           >
             <Link
@@ -74,7 +74,9 @@ function ProjectSection() {
             <div className="flex flex-col gap-[6px]">
               <div className="flex flex-col gap-[1px]">
                 <div className="flex w-full justify-between items-center">
-                  <p className="text-xl font-semibold">{project.name}</p>
+                  <p className="text-xl md:text-lg font-semibold">
+                    {project.name}
+                  </p>
                   <Link
                     to={project.linkToProject}
                     target="_blank"
@@ -83,13 +85,18 @@ function ProjectSection() {
                     <i className="ri-github-fill"></i>
                   </Link>
                 </div>
-                <p className="w-[90%] text-sm font-base leading-[1.35]">
+                <p className="w-[90%] text-sm md:text-sm font-base leading-[1.35] md:leading-[1.2] bg-red-500 block md:hidden">
                   {project.about}
                 </p>
+                <div className="w-[90%] text-sm md:text-sm font-base leading-[1.35] md:leading-[1.2] h-[51px] overflow-hidden hidden md:block">
+                  {project.about}
+                </div>
               </div>
               <div className="flex flex-col gap-[2px]">
-                <p className="text-base font-semibold">Tools</p>
-                <p className="text-sm font-base leading-[1.35]">
+                <p className="text-base md:text-sm md:uppercase font-semibold">
+                  Tools
+                </p>
+                <p className="text-sm font-base leading-[1.35] md:leading-[1.2]">
                   {project.tools}
                 </p>
               </div>
